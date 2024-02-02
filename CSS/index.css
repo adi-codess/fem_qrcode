@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigdiv {
+  width:  100%;
+  height: 100%;
+  background-color: hsl(212, 45%, 89%);
+  box-shadow: 0.5em 0.5em 1.5em rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoholder {
+  width: 20%;
+  height: 70%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1em;
+  box-shadow: 0.5em 0.5em 1.5em rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.qrcode {
+  width: 100%;
+  height: 60%;
+  background: url("../images/image-qr-code.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1em;
+}
+
+.content {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color:hsl(218, 44%, 22%);
+  text-align: center;
+  letter-spacing: 0.1vw;
+}
+
+.content span{
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color:hsl(212, 45%, 89%);
+  width: 90%;
+  margin-top: 2.5vh;
+  letter-spacing: 0.08vw;
+}
+
+@media (max-width:375px) {
+  .infoholder{
+    width: 90%;
+    height: 70%;
+  }
+}
